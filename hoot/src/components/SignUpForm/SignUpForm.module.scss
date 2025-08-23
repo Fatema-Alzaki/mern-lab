@@ -1,0 +1,86 @@
+// sweet pink palette
+$pink-400: #ff7ab8;
+$pink-500: #ff5fa9;
+$pink-600: #ff4a9b;
+$rose-700: #6b294c;
+$blush-bg: #fff7fb;
+$pink-shadow: rgba(255, 122, 184, 0.22);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.1rem;
+  background: linear-gradient(180deg, $blush-bg 0%, #ffffff 100%);
+  border-left: 6px solid $pink-400;
+  border-radius: 14px;
+  box-shadow: 0 6px 14px $pink-shadow;
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #f4c9de;
+  background: #fff;
+  color: $rose-700;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.06s ease;
+  caret-color: $pink-500;
+
+  &::placeholder {
+    color: #caa2b6;
+  }
+
+  &:hover {
+    border-color: $pink-400;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $pink-500;
+    box-shadow: 0 0 0 3px rgba(255, 122, 184, 0.18);
+    transform: translateY(-1px);
+  }
+}
+
+.button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(180deg, $pink-500 0%, $pink-600 100%);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  transition: transform 0.08s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 8px 16px $pink-shadow;
+
+  &:hover {
+    filter: brightness(1.02);
+    box-shadow: 0 12px 22px rgba(255, 122, 184, 0.28);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(255, 122, 184, 0.22);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
+    background: linear-gradient(180deg, #ffc2df 0%, #ffb0d6 100%);
+    box-shadow: none;
+  }
+}
+
+.error {
+  color: #d72670;
+  font-size: 0.9rem;
+  text-align: center;
+  background: #ffe6f1;
+  border-left: 4px solid $pink-500;
+  border-radius: 10px;
+  padding: 0.55rem 0.75rem;
+}

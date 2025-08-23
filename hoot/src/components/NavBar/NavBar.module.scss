@@ -1,0 +1,53 @@
+// soft pink palette
+$pink-400: #ff7ab8;
+$pink-500: #ff5fa9;
+$pink-600: #ff4a9b;
+$rose-700: #6b294c;
+$blush-bg: #fff7fb;
+$pink-shadow: rgba(255, 122, 184, 0.22);
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(180deg, $blush-bg 0%, #ffffff 100%);
+  border-left: 6px solid $pink-400;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px $pink-shadow;
+}
+
+.email {
+  font-size: 0.9rem;
+  color: #b77a9a; // mauve
+}
+
+.button {
+  align-self: start;
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(180deg, $pink-500 0%, $pink-600 100%);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition: transform 0.08s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 8px 16px $pink-shadow;
+
+  &:hover {
+    filter: brightness(1.02);
+    box-shadow: 0 12px 22px rgba(255, 122, 184, 0.28);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(255, 122, 184, 0.22);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 122, 184, 0.25);
+  }
+}

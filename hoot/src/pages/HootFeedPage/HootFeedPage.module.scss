@@ -1,0 +1,71 @@
+// cute pink palette
+$pink-300: #ffc2df;
+$pink-400: #ff7ab8;
+$pink-500: #ff5fa9;
+$rose-700: #6b294c;
+$blush-0: #fff7fb;
+$pink-shadow: rgba(255, 122, 184, 0.18);
+
+.HootFeedPage {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(60rem 40rem at 15% -10%, #ffeaf4 0%, transparent 55%),
+    linear-gradient(135deg, $blush-0, #ffffff 60%);
+
+  aside {
+    width: 240px;
+    background: #ffffff;
+    border-right: 1px solid #f4c9de;
+    padding: 1rem;
+    box-shadow: 2px 0 12px $pink-shadow;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    min-height: 100vh;
+
+    // subtle accent strip
+    border-image: linear-gradient(180deg, $pink-400, $pink-300) 1;
+  }
+
+  .feed {
+    flex: 1;
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+
+    // gentle inset header accent if you add an h1/h2
+    > h1, > h2 {
+      margin: .25rem 0 1rem;
+      font-size: 1.6rem;
+      color: $rose-700;
+      border-left: 6px solid $pink-400;
+      padding-left: .6rem;
+      box-shadow: 0 8px 18px -12px $pink-shadow inset;
+    }
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .HootFeedPage {
+    flex-direction: column;
+
+    aside {
+      width: 100%;
+      min-height: auto;
+      position: relative;
+      top: unset;
+      border-right: none;
+      border-bottom: 1px solid #f4c9de;
+      border-image: none;
+      box-shadow: 0 2px 10px $pink-shadow;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .feed {
+      padding: 1rem;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mern-lab",
+  "version": "1.0.0",
+  "description": "<img width=\"2324\" height=\"978\" alt=\"image\" src=\"https://github.com/user-attachments/assets/1c3365aa-fc6a-442d-a147-ffb24c845a09\" />",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fatema-Alzaki/mern-lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Fatema-Alzaki/mern-lab/issues"
+  },
+  "homepage": "https://github.com/Fatema-Alzaki/mern-lab#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
